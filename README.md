@@ -10,4 +10,4 @@ stock data handling and utilization <br>
 [다중선형회귀](https://hleecaster.com/ml-multiple-linear-regression-example/) <br>
 [회귀 개념, 분류](https://bangu4.tistory.com/100) <br>
 <br>
-<span fontstyle = 'red'>/project/guri/forposter/Result1.정확도.ipynb</span> 참고 <br>
+<span style = 'color: red'>/project/guri/forposter/Result1.정확도.ipynb</span> 참고 <br>
