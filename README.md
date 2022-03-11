@@ -36,3 +36,4 @@ df['new_col'] = np.where(df['base_col'] == 1, 'new', 'old')
 
 [회귀 cross_val_score()의 hyper param](https://nicola-ml.tistory.com/26) <br>
 
+[cross_val_score()의 공식 doc](https://scikit-learn.org/stable/modules/model_evaluation.html#scoring-parameter)
