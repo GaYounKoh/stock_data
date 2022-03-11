@@ -25,5 +25,14 @@ df['new_col'] = np.where(df['base_col'] == 1, 'new', 'old')
 
 [np.where(condition, x, y); 조건 충족시 x, 그렇지 않으면 y 반환.](https://www.delftstack.com/ko/howto/python-pandas/how-to-create-dataframe-column-based-on-given-condition-in-pandas/) <br>
 
-[회귀 cross_val_score()의 hyper param](https://nicola-ml.tistory.com/26)
+[data split - random ,,, shuffle](https://rfriend.tistory.com/519) <br>
+
+```
+비시계열 데이터는 shuffle 해도 random이랑 같음.
+단, 시계열 데이터는 shuffle과 random이 다른 의미이니 주의.
+(시계열 데이터는 순서가 중요하므로)
+```
+<br>
+
+[회귀 cross_val_score()의 hyper param](https://nicola-ml.tistory.com/26) <br>
 
