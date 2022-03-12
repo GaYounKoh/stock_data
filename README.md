@@ -59,3 +59,8 @@ A. 사이킷런은 데이터를 변환하는 대부분의 로직에서 fit()과 
 ```
 [transpose()가 뭔지 봐야함.2 - 아직 안 읽음.](https://mindsee-ai.tistory.com/61) <br>
 
+<br>
+
+[xticks]() <br>
+[python plt arrow](https://codetorial.net/matplotlib/module_patches.html) <br>
+[annotate()](https://runebook.dev/ko/docs/matplotlib/_as_gen/matplotlib.pyplot.arrow) <br>
