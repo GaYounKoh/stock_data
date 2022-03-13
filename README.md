@@ -64,3 +64,7 @@ A. 사이킷런은 데이터를 변환하는 대부분의 로직에서 fit()과 
 [xticks]() <br>
 [python plt arrow](https://codetorial.net/matplotlib/module_patches.html) <br>
 [annotate()](https://runebook.dev/ko/docs/matplotlib/_as_gen/matplotlib.pyplot.arrow) <br>
+
+<br>
+
+[reg 평가지표로써의 r^2](https://velog.io/@dlskawns/Linear-Regression-%EC%84%A0%ED%98%95%ED%9A%8C%EA%B7%80%EC%9D%98-%ED%8F%89%EA%B0%80-%EC%A7%80%ED%91%9C-MAE-MSE-RMSE-R-Squared-%EC%A0%95%EB%A6%AC)
