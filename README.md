@@ -78,3 +78,43 @@ A. 사이킷런은 데이터를 변환하는 대부분의 로직에서 fit()과 
 - reg dummy 결과 달랐던 이유는 scoring 방법이 달랐기 때문. + 나는 cv를 안함.
 
 <br>
+
+# 220316
+[cross_val_score는 그냥 x,y만 나눠놓은 데이터 집어넣으면 알아서 비율 짜서 데이터 분할해서 cv 해주는가에 대하여... ==> 이미 전에도 같은 의문을 가졌었으며, 답도 적어둠. cv default == 5 (5회 cross checking)] <br>
+
+[아 모델링이 아니라 cv면 전체 데이터를 넣어야하는거구나.](https://post.naver.com/viewer/postView.nhn?volumeNo=28007428&memberNo=18071586) <br>
+
+cross_val_score()의 default는 r^2(결정계수) <br>
+<br>
+
+[교차 검증의 정확도를 간단하게 나타낼 때는 평균으로...](https://jhryu1208.github.io/data/2021/01/24/ML_cross_validation/) <br>
+
+dummy에 cv가 필요한가에 대하여... <br>
+
+<br>
+
+* 잊지 말아햐 할 사항: 다 함수로 만들어서 사용중이기 때문에 입력이 매개변수임. <br>
+매개변수가 기존에 만들어둔 변수랑 이름이 같아서 헷갈렸음.
+<br>
+<br>
+<br>
+
+
+[모델링 단계] <br>
+1. data split (1차: x대 y, 2차: xy각각을 train대 test로)
+
+2. model fitting with train data
+
+3. predict with test data
+
+4. scoring with test data, predict data <br>
+(얼마나 맞았는지.) <br>
+
+근데 왜 우리가 썼던 reg는 fitting을 하지 않는 가에 대하여... 내가 오로지 cv하는 것에 대한 포스팅을 찾은건가... <br>
+회귀모델링 포스팅이었음.. <br>
+그냥 그 분이 fitting을 빼먹으신 거인듯. <br>
+[error message: The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2.](https://stackoverflow.com/questions/43179429/scikit-learn-error-the-least-populated-class-in-y-has-only-1-member) <br>
+
+```
+The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2.
+```
