@@ -152,3 +152,12 @@ cross_val_score <br>
 회귀도 fitting 해줘야 하는건데 참고했던 그 블로그가 fitting 과정을 안넣은것 같았음. <br>
 cross_val_score는 결국 단순히 score 내는 거라서 fitting을 해주지는 않는다고 판단. <span style = 'color : red'> 아직 확실하지 않음.</span><br>
 
+
+* 오늘 알게된 것: <br>
+list에는 mean함수가 따로 내장돼있지 않다.<br>
+
+* 구문 통째로 알아두면 좋을 lambda함수 사용 예시, 그리고 내장함수 sorted(): <br>
+``` python
+sorted(dic.items(), key = lambda t : t[1])
+# dictionary의 value에 대해 작은 순으로 줄 세워짐.
+```
