@@ -113,8 +113,42 @@ dummy에 cv가 필요한가에 대하여... <br>
 근데 왜 우리가 썼던 reg는 fitting을 하지 않는 가에 대하여... 내가 오로지 cv하는 것에 대한 포스팅을 찾은건가... <br>
 회귀모델링 포스팅이었음.. <br>
 그냥 그 분이 fitting을 빼먹으신 거인듯. <br>
-[error message: The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2.](https://stackoverflow.com/questions/43179429/scikit-learn-error-the-least-populated-class-in-y-has-only-1-member) <br>
+[error message: The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2.](https://velog.io/@xdfc1745/The-least-populated-class-in-y-has-only-1-member-which-is-too-few.-The-minimum-number-of-groups-for-any-class-cannot-be-less-than-2) <br>
+<br>
+```
+회귀는 계층적 split이 안됨. 주의!!!!!
+sss (Stratified Shuffle Split) 쓰면 안되고, ss (Shuffle Split) 써야함.
+```
+<br>
+[위 에러메세지 잘못된 해석](https://stackoverflow.com/questions/43179429/scikit-learn-error-the-least-populated-class-in-y-has-only-1-member) <br>
+~~The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2.~~<br>
+~~==> 즉, y shape이 (1,)으로 돼있을 것이므로 reshape하란 소리임. (______,1)이 되게끔.~~ <br>
+~~y.reshape(-1,1)~~
+<br>
 
-```
-The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2.
-```
+[기타 오늘 참고한 블로그들] <br>
+[기타 1. cross_val_score() 와 cross_validate() - 아마 cv 할 때 fitting을 알아서 해주는건지 해서 찾아본 듯.](https://tensorflow.blog/tag/cross_val_score/) <br>
+[기타 2. 문제 풀이를 통한 reg 이해 - 아마 reg는 예측할 때 fitting을 안하는건가 해서 찾아본 것일듯.](https://post.naver.com/viewer/postView.nhn?volumeNo=28007428&memberNo=18071586) <br>
+[기타 3. 머신러닝 학습시 고려해야 할 것: Test data와 CV data - 아마 참고한 예시 블로그에서 cv 할 때 fitting 안한 것 때문에 cv할 때는 fitting 안하는건지, 혹은 알아서 하는건지 해서 찾아본 듯.](https://box-world.tistory.com/23) <br>
+[기타 4. 선형회귀 (linear reg) - 회귀는 fitting을 안하는건지 해서 찾아봄.](https://hleecaster.com/ml-linear-regression-example/) <br>
+[기타 5. 선형회귀 모델 - def의 매개변수와 함수 생성 전에 만들었던 변수가 같아서 회귀 pred는 df 전체를 사용하는건지 헷갈렸어서 찾아봄.](https://kimdingko-world.tistory.com/101) <br>
+[기타 6. 회귀로 예측하기 - 회귀는 예측전에 train으로 fitting 안하나 해서 찾아봄.](https://otexts.com/fppkr/forecasting-regression.html) <br>
+==> 논외로 여기 블로그 기능이 신기해서 맘에 들었음. <br>
+<br>
+
+[기타 7. 파이썬 회귀분석 기본 사용법 정리 scikit-learn, statsmodels - 회귀는 예측 전에 train으로 fitting 안하나 해서 ...](https://data-newbie.tistory.com/777) <br>
+[기타 8. 파이썬으로 선형회귀 분석하기 예제 - 회귀는 예측 전에 train으로 fitting 안하나 해서 ...](https://jimmy-ai.tistory.com/33) <br>
+[기타 9. 모델 평가와 성능향상 - 교차검증 - 또 cross_val_score 관련...](https://jhryu1208.github.io/data/2021/01/24/ML_cross_validation/) <br>
+
+
+<br>
+
+
+* *오늘의 이슈* <br>
+cross_val_score <br>
+회귀는 train data로 fitting을 해주지 않는가에 대하여... <br>
+
+* *결론:* <br>
+회귀도 fitting 해줘야 하는건데 참고했던 그 블로그가 fitting 과정을 안넣은것 같았음. <br>
+cross_val_score는 결국 단순히 score 내는 거라서 fitting을 해주지는 않는다고 판단. <span style = 'color : red'> 아직 확실하지 않음.</span><br>
+
