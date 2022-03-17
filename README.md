@@ -174,4 +174,9 @@ shuffle split을 함수 밖에서 실행하고 cv 할 것. <br>
 [교수님께서 보내주신 참고 페이지, 우리가 지금 쓰는 데이터임.](https://inhovation97.tistory.com/m/60) <br>
 column 별 minmax 해줘야함. <br>
 
+3. 위 블로그에서 말하는 3번 minmax방식을 사용하려면 <br>
+현재 쓰고있는 cv 방식을 바꿀 필요가 있어보임. ~~밖에서 train test 다 나누고, idx로 해야할 것 같음.~~ (??????엥,,, x,y만 나눠야 idx로 cv 할 수 있는 것임.) <br>
+==> 흠.... cv 돌리려면 for문 안에서 train test 나누는게 맞아보임. <br>
+
+
 
