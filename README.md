@@ -166,6 +166,8 @@ sorted(dic.items(), key = lambda t : t[1])
 * issue
 1. 매번 split 값이 같은지 여부 확인 후 다르다면 <br>
 shuffle split을 함수 밖에서 실행하고 cv 할 것. <br>
-<span style={color:'red'}> 👉 근데 같았음. </span>
+<span style = 'color' : 'red'> 👉 근데 같았음. 따라서 새로 뭐 할 필요 없음. </span> <br>
 
-2. 
+* HW
+2. scaling에 대해 공부해올 것. <br>
+[교수님께서 보내주신 참고 페이지, 우리가 지금 쓰는 데이터임.](https://inhovation97.tistory.com/m/60)
