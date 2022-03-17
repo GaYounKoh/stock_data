@@ -164,6 +164,8 @@ sorted(dic.items(), key = lambda t : t[1])
 
 # 220317
 * issue
-매번 split 값이 같은지 여부 확인 후 다르다면 <br>
+1. 매번 split 값이 같은지 여부 확인 후 다르다면 <br>
 shuffle split을 함수 밖에서 실행하고 cv 할 것. <br>
-<span style={color:'red'}>==> 근데 같았음. </span>
+<span style={color:'red'}> 👉 근데 같았음. </span>
+
+2. 
