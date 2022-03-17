@@ -161,3 +161,7 @@ list에는 mean함수가 따로 내장돼있지 않다.<br>
 sorted(dic.items(), key = lambda t : t[1])
 # dictionary의 value에 대해 작은 순으로 줄 세워짐.
 ```
+
+# 220317
+* issue
+shuffle split을 함수 밖에서 실행하고 cv 할 것.
