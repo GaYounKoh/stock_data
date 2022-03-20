@@ -215,3 +215,7 @@ w.writerow(list) # 하다보면 작성됨.
 
 f.close()
 ```
+
+<br>
+
+* for문의 loop name을 같게해서 for loop이 계속 도는 것인가..?
