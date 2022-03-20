@@ -181,6 +181,17 @@ column 별 minmax 해줘야함. <br>
 <br>
 
 # 220320
+
+* 오늘의 python TMI
+[np.append() 사용법](https://ponyozzang.tistory.com/506) <br>
+[ndarray dtype 한 번에 바꾸기; astype(np.int64)](https://rfriend.tistory.com/285) <br>
+<br>
+
+* inhovation~ blog 3단계 이해하기 <br>
+[볼린저밴드와 MA20; MA20은 20일 이평선으로, 동시에 볼린저밴드의 중심선이다.](https://psystat.tistory.com/119) <br>
+[볼린저밴드 수식](https://grand-unified-engine.tistory.com/21) <br>
+<br>
+
 * 한 줄 씩 csv file 생성하는 최대한 기본 함수를 이용한 코드 (결국 csv 모듈을 불러옴...): <br>
 
 * [그냥 open ver] <br>
