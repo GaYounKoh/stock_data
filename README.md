@@ -178,5 +178,29 @@ column 별 minmax 해줘야함. <br>
 현재 쓰고있는 cv 방식을 바꿀 필요가 있어보임. ~~밖에서 train test 다 나누고, idx로 해야할 것 같음.~~ (??????엥,,, x,y만 나눠야 idx로 cv 할 수 있는 것임.) <br>
 ==> 흠.... cv 돌리려면 for문 안에서 train test 나누는게 맞아보임. <br>
 
+<br>
+
+# 220320
+* 한 줄 씩 csv file 생성하는 최대한 기본 함수를 이용한 코드 (결국 csv 모듈을 불러옴...): <br>
+
+* [그냥 open ver] <br>
+[현재까지 발견한 최선..? import csv 필요...](https://walknrest.tistory.com/288) <br>
+[함께 보기](https://devpouch.tistory.com/55) <br>
+<br>
+
+* [with open ver] <br>
+[with 문 사용하기](https://twpower.github.io/17-with-usage-in-python) <br>
+<br>
 
 
+``` python
+import csv
+# 저장할 파일명, 인코딩 타입 입력
+f = open('new file.csv', 'w', encoding = 'utf-8-sig')
+w = csv.writer(f)
+w.writerow(list)
+w.writerow(list)
+w.writerow(list) # 하다보면 작성됨.
+
+f.close()
+```
