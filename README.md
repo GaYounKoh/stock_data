@@ -249,7 +249,7 @@ df.nunique()
 
 [(NaT) null 값 확인하기 1](https://stackoverflow.com/questions/69590754/nattype-object-has-no-attribute-isna) <br>
 [(NaT) null 값 확인하기 2](https://pandas.pydata.org/pandas-docs/version/1.0.0/whatsnew/v1.0.0.html) <br>
-
+[notnull, notempty 차이](https://055055.tistory.com/37) <br>
 
 ```python
 # NaT는 어떻게 판단..?
@@ -264,3 +264,8 @@ df['col1'].notnull()
 df['col1'].notna()
 ```
 <br>
+
+* [파일여닫고 읽고 쓰기](https://nittaku.tistory.com/244)
+open으로 파일을 열면 .close()로 닫아줘야함. <br>
+with open으로 열면 안닫아줘도 됨. 알아서 닫힘. <br>
+
