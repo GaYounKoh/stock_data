@@ -219,3 +219,48 @@ f.close()
 <br>
 
 * for문의 loop name을 같게해서 for loop이 계속 도는 것인가..?
+<br>
+
+# 220330
+[FinanceDataReader manual](https://coding-kindergarten.tistory.com/category/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%ED%8C%A8%ED%82%A4%EC%A7%80/%EC%A3%BC%EC%8B%9D%ED%88%AC%EC%9E%90) <br>
+
+[lambda에 if문 1, lambda는 적용시킬 함수 짜는 것,,, map 결과는 list로 볼 수 있음.](https://dojang.io/mod/page/view.php?id=2360) <br>
+
+[lambda에 if문 2](https://wpaud16.tistory.com/55) <br>
+
+```python
+# lambda 예시
+list(map(lambda x:x**2, range(5)))
+```
+<br>
+
+[pandas 불러온 데이터 살펴보기](https://hogni.tistory.com/5) <br>
+
+```python
+df.head()
+df.shape()
+df.info()
+df.describe()
+df.value_counts()
+df.unique()
+df.nunique()
+```
+<br>
+
+[(NaT) null 값 확인하기 1](https://stackoverflow.com/questions/69590754/nattype-object-has-no-attribute-isna) <br>
+[(NaT) null 값 확인하기 2](https://pandas.pydata.org/pandas-docs/version/1.0.0/whatsnew/v1.0.0.html) <br>
+
+
+```python
+# NaT는 어떻게 판단..?
+# 정답
+pd.isnull(df[col][n])
+pd.notnull(df[col][n])
+################################### 이 아래 코드들로는 그 열 내 요소 한 개 판단은 못 함.
+pd.NA
+np.where(df['col1'].isnull())
+df['col1'].isna()
+df['col1'].notnull()
+df['col1'].notna()
+```
+<br>
