@@ -269,3 +269,13 @@ df['col1'].notna()
 open으로 파일을 열면 .close()로 닫아줘야함. <br>
 with open으로 열면 안닫아줘도 됨. 알아서 닫힘. <br>
 
+# 220409
+attention lstm,,, <br>
+
+* LSTM 층을 rnn layer라고 부르는 이유가 궁금했다. <br>
+[RNN과 LSTM을 이해해보자!](https://ratsgo.github.io/natural%20language%20processing/2017/03/09/rnnlstm/)<br>
+[TensolFlow LSTM layer 활용법](https://teddylee777.github.io/tensorflow/lstm-layer) <br>
+[[머신러닝 순한맛] LSTM의 모든 것](https://box-world.tistory.com/73) <br>
+<br>
+
+[np.squeeze](https://jimmy-ai.tistory.com/101) <br>
