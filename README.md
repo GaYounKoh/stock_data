@@ -287,3 +287,32 @@ attention lstm,,, <br>
 <br>
 
 [np.squeeze](https://jimmy-ai.tistory.com/101) <br>
+
+<br>
+
+# 220412
+* numpy의 unique는 np.unique(ndarray)
+<br>
+
+# 220413
+* 문자열 판단 method
+> str.is~~()로 사용
+[ref1_kor](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=zlatmgpdjtiq&logNo=221302490913) <br>
+[ref2_eng](https://initialcommit.com/blog/python-isalpha-string-method) <br>
+
+[isdecimal과 숫자인지 판별하는 다른 method의 차이: 지수표현을 문자로 안보고 보고...](https://it-neicebee.tistory.com/33) <br>
+
+[그 외 다양한 str 함수](https://jhproject.tistory.com/158)
+<br>
+
+```python
+isalpha # 글자인지
+isdigit # 숫자인지
+isdecimal # 숫자인지
+isnumeric # 숫자인지
+isalnum # 숫자 또는 글자인지
+
+isspace
+isprintable
+isidentifier
+
