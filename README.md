@@ -316,3 +316,9 @@ isspace
 isprintable
 isidentifier
 
+# 220428 ~ 220512 수업 전 (8w)
+* 조건만족cd_dt (by 최종변동폭cd_dt).txt <br>
+* 조건만족cd_dt (by ffin).txt <br>
+
+# 220512 수업 중 ~ (10w)
+조건df.csv <br>
