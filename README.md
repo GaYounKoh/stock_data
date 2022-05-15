@@ -302,7 +302,7 @@ attention lstm,,, <br>
 
 [isdecimal과 숫자인지 판별하는 다른 method의 차이: 지수표현을 문자로 안보고 보고...](https://it-neicebee.tistory.com/33) <br>
 
-[그 외 다양한 str 함수](https://jhproject.tistory.com/158)
+[그 외 다양한 str 함수](https://jhproject.tistory.com/158) <br>
 <br>
 
 ```python
@@ -315,10 +315,19 @@ isalnum # 숫자 또는 글자인지
 isspace
 isprintable
 isidentifier
+```
+<br>
 
 # 220428 ~ 220512 수업 전 (8w)
 * 조건만족cd_dt (by 최종변동폭cd_dt).txt <br>
 * 조건만족cd_dt (by ffin).txt <br>
+<br>
 
 # 220512 수업 중 ~ (10w)
 조건df.csv <br>
+<br>
+
+# 220516
+[데이터 읽고 쓰고 저장하기 .to_feather, .to_pickle, .to_csv 비교](https://data-newbie.tistory.com/359) <br>
+
+[partition 방식의 modin.pandas](https://data-newbie.tistory.com/279?category=750452) <br>
