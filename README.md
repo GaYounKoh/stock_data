@@ -330,4 +330,40 @@ isidentifier
 # 220516
 [데이터 읽고 쓰고 저장하기 .to_feather, .to_pickle, .to_csv 비교](https://data-newbie.tistory.com/359) <br>
 
-[partition 방식의 modin.pandas](https://data-newbie.tistory.com/279?category=750452) <br>
+[100GB 이하의 data에서는 partition 방식의 modin.pandas 사용하는 것이 좋음.](https://data-newbie.tistory.com/279?category=750452) <br>
+
+<br>
+
+``` python
+## ma_df: 보조지표 추가한 df
+## object보다는 category type으로 저장, 사용하는 것이 용량면에서 더 나은 선택일것.
+
+!pip install pyarrow # feather로 저장하려면 pyarrow 설치 먼저
+
+# feather와 pickle은 index 파라미터가 따로 없으므로 reset_index 먼저
+ma_df.reset_index(inplace = True)
+ma_df.drop('index', axis = 1, inplace = True)
+
+
+
+
+
+## 용량 ftr < pkl < csv
+# feather로 저장, 확장자 .ftr
+ma_df.to_feather('보조지표추가_cd_nuniq=2348.ftr')
+
+# 읽기
+pd.read_feather("보조지표추가_cd_nuniq=2348.ftr", columns = None, use_threads = True)
+
+
+
+
+# pickle로 저장, 확장자 .pkl
+ma_df.to_pickle('보조지표추가_cd_nuniq=2348.pkl')
+
+# 읽기
+pd.read_pickle("보조지표추가_cd_nuniq=2348.pkl")
+
+```
+
+
