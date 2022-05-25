@@ -382,7 +382,7 @@ col 구성 바꾼 fin_df.csv 생성 <br>
 [머신러닝] 학습시간 단축? <br>
 데이터양이 너무 많아서 시간이 너무 오래걸리는 문제... <br>
 [그냥 데이터 증강이 학습속도 저하를 야기한다는 것만 나와있음.](https://www.hankyung.com/it/article/2021073013321)<br>
-<font size = 15>[❗❗❗❗짱 친절... 100만개 정도 데이터로 머신러닝 수행하는 경우 학습 속도 높이는 방법에 대한 질문](https://www.inflearn.com/questions/30545)</font><br>
+<font size = 15>❗❗❗❗</font>[❗❗❗❗짱 친절... 100만개 정도 데이터로 머신러닝 수행하는 경우 학습 속도 높이는 방법에 대한 질문](https://www.inflearn.com/questions/30545)<br>
 
 ```
 <<<필요한 내용만 발췌>>>
