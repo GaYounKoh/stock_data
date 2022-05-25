@@ -413,6 +413,15 @@ col 구성 바꾼 fin_df.csv 생성 <br>
 ```
 
 [딥 러닝 모델 학습을 빠르게 하기 위한 6가지 tip❗](https://info-topnews.tistory.com/7) <br>
+
+```
+1. 다른 학습률 조정 계획 사용 고려 ???
+2. DataLoader 및 페이지 잠금 메모리에서 여러 보조 프로세스 사용 ???
+3. 배치 크기 최대화
+4. 자동 혼합 정밀 AMP 사용 ???
+5. gradient 활성화 checkpoint 사용 ???
+6. .tensor() 대신 .as_tensor() 사용 ???
+```
 <br>
 
 
