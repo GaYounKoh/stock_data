@@ -120,6 +120,7 @@ dummy에 cv가 필요한가에 대하여... <br>
 sss (Stratified Shuffle Split) 쓰면 안되고, ss (Shuffle Split) 써야함.
 ```
 <br>
+
 [위 에러메세지 잘못된 해석](https://stackoverflow.com/questions/43179429/scikit-learn-error-the-least-populated-class-in-y-has-only-1-member) <br>
 ~~The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2.~~<br>
 ~~==> 즉, y shape이 (1,)으로 돼있을 것이므로 reshape하란 소리임. (______,1)이 되게끔.~~ <br>
