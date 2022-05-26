@@ -404,7 +404,7 @@ col 구성 바꾼 fin_df.csv 생성 <br>
     B. Multi processing 으로 알고리즘을 적용하는 것.
         서버를 여러개 Core를 가진 시스템으로 구성.
         사이킷런은 멀티 core로 병렬 처리를 지원
-        n_jobs=-1을 Estimator 객체에 초기 파라미터로 설정하면 시스템이 가진 모든 CPU 코어를 병렬로 사용하여 학습하게 됨.
+        n_jobs=-1을 Estimator 객체에 초기 파라미터로 설정하면 시스템이 가진 모든 CPU 코어를 병렬로 사용하여 학습하게 됨. - n_jobs = 숫자만큼 cpu 사용
         8Core CPU가 1Core CPU보다 더 빠르게 학습함.(그렇다고 8배 빠르지는 않음. 선형 성능 확장에 제약 o).
 
 
