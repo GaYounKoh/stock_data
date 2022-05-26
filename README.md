@@ -449,3 +449,5 @@ lstm의 경우 epoch은 줄이고 batch 사이즈는 최대로 키워서 해결.
 
 ```
 
+# 220526
+[시계열 수치입력 수치예측 모델레시피](https://tykimos.github.io/2017/09/09/Time-series_Numerical_Input_Numerical_Prediction_Model_Recipe/)
