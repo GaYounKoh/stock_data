@@ -468,3 +468,10 @@ import os
 os.cpu_count()
 ```
 <br>
+
+## 220601
+[무작정 따라하는 EDA](https://daje0601.tistory.com/106) <br>
+[파이썬으로 주식 보조지표 구하기 TA](https://junyoru.tistory.com/136) <br>
+[파이싼 주식데이터 분석, 주식 보조지표 확인하는 방법은?](https://tariat.tistory.com/955) <br>
+
+[파이썬, 주식차트와 보조지표 그리기(plotly)](https://sjblog1.tistory.com/45) <br>
