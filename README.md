@@ -475,3 +475,47 @@ os.cpu_count()
 [파이싼 주식데이터 분석, 주식 보조지표 확인하는 방법은?](https://tariat.tistory.com/955) <br>
 
 [파이썬, 주식차트와 보조지표 그리기(plotly)](https://sjblog1.tistory.com/45) <br>
+<br>
+
+## 220602
+### study multi processing
+[원작자 코드 보기](https://github.com/inhovation97/Research-Stock-market-Data/blob/main/code/scaling3.py)
+-> 여기에 멀티 프로세싱 관련 코드 나와있음 <br>
+
+[검색어]: 멀티 프로세싱 예시 코드 파이썬 <br>
+[판다스 멀티 프로세싱 공식 문서](https://docs.python.org/ko/3/library/multiprocessing.html) <br>
+[멀티 프로세싱 구현예제 및 멀티 쓰레드와 실행시간 비교 분석](https://ddolcat.tistory.com/665) <br>
+[파이썬 multi processing 사용법](https://light-tree.tistory.com/239) <br>
+[[병렬 프로그래밍] 3. multi-process 사용하기 with python](https://zephyrus1111.tistory.com/113) - 줄 별로 설명, 친절<br>
+4초 정도 걸리는 작업을 단축시키는 예시
+
+[Python multiprocessing.Pool 멀티프로세싱 2](https://tempdev.tistory.com/entry/Python-multiprocessingPool-%EB%A9%80%ED%8B%B0%ED%94%84%EB%A1%9C%EC%84%B8%EC%8B%B1-2) <br>
+[Python | Multiprocessing(파이썬 멀티프로세싱)](https://yeonfamily.tistory.com/5) <br>
+[6주차, 병렬처리, 프로세스, 쓰레드](https://ish0301.tistory.com/60) - 코드가 예쁘게 나와있지는 않음. <br>
+[wikidocs 멀티프로세싱 문서](https://wikidocs.net/85603) <br>
+
+[파이썬 - multiprocessing 설명 및 예제](https://niceman.tistory.com/147) <br>
+[multi processing python](https://velog.io/@tmvkrorl/Multi-Processing-python) <br>
+[멀티 쓰레드(x) 멀티 프로세싱](https://koreapy.tistory.com/1276) <br>
+❤💛💜💨 읽는 중 [Ray를 이용해 Python 병렬 처리 쉽게 하기](https://otzslayer.github.io/python/2021/10/15/multiprocesesing-using-ray.html) - 병렬처리를 하는 이유가 나와있음, 작성자가 multiprocessing 사용법이 맘에 안들었지만 그래도 써봤다고 함.<br>
+<br>
+
+멀티 프로세싱을 하는 이유: 큰 테이터에 대한 작업을 더 빠르게 하기위해.......... <br>
+파이썬에서 기본으로 제공해주는 multiprocessing이라는 표준 라이브러리 <br>
+<br>
+
+multi processing의 Pool 객체 <br>
+여러 입력 값에 걸쳐 함수의 실행 병렬처리 <br>
+입력 데이터를 프로세스에 분산시키는 방법 제공 <br>
+==> 데이터 병렬처리 <br>
+
+```python
+from multiprocessing import Pool
+
+def f(x):
+    return x*x
+
+if __name__ == '__main__':
+    with Pool(5) as p:
+        print(p.map(f, [1, 2, 3]))
+```
