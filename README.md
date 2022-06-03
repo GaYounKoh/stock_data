@@ -519,3 +519,20 @@ if __name__ == '__main__':
     with Pool(5) as p:
         print(p.map(f, [1, 2, 3]))
 ```
+<br>
+
+# 220603
+[사이킷런을 이용해 머신러닝 모델링 해보기](https://brunch.co.kr/@parkkyunga/66) <br>
+[csv to numpy methods, methods3, 5 이용](https://linuxhint.com/python-read-csv-2d-array/) <br>
+<br>
+
+```
+Method 3: Using the Pandas Dataframe
+Method 5: Using Pandas Dataframe Values
+```
+<br>
+
+```python
+np.concatenate([arr1, arr2]) # 아래로 잇기 (열 수가 같아야 함.)
+np.concatenate([arr1, arr2], axis = 1) # 옆으로 잇기 (행 수가 같아야 함.)
+```
