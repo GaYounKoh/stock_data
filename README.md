@@ -536,3 +536,62 @@ Method 5: Using Pandas Dataframe Values
 np.concatenate([arr1, arr2]) # 아래로 잇기 (열 수가 같아야 함.)
 np.concatenate([arr1, arr2], axis = 1) # 옆으로 잇기 (행 수가 같아야 함.)
 ```
+<br>
+
+# 220604
+머신러닝 모델링시 NaN값 있으면 안됨.(보통은 안되는데 되는 경우가 있기도 함. ex) rf...) <br>
+그래서 isnull을 확인해주고, <br>
+fillna를 해주는 것. <br>
+<br>
+[머신러닝 모델 입력에 NaN값] 이런거 검색했다가 기억 남. 검색결과 따로 보진 않음.
+<br>
+<br>
+
+[머신러닝 모델 성능 평가 mse for regression, acc for classification, ...](https://nicola-ml.tistory.com/88) <br>
+
+> RMSE / MSE / logloss # for Regression
+> Accuracy / f1-score # for Classification
+
+<br>
+
+[머신러닝 모델 성능 평가 관련 + 예시 코드](https://bhcboy100.medium.com/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EB%B6%84%EB%A5%98-%ED%8F%89%EA%B0%80%EC%A7%80%ED%91%9C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-%EC%A0%95%ED%99%95%EB%8F%84-%EC%A0%95%EB%B0%80%EB%8F%84-%EC%9E%AC%ED%98%84%EC%9C%A8-f1-%EC%8A%A4%EC%BD%94%EC%96%B4-6bf91535a01a) <br>
+
+[회귀/ 분류시 알맞은 metric과 설명](https://mole-starseeker.tistory.com/30) - 아주 친절, 괜찮아 보임, 회귀의 경우 예시가 주식데이터<br>
+
+## 회귀문제
+---
+실제 값과 모델이 예측하는 값의 차이에 기반을 둔 metric 사용. <br>
+
+대표적으로
+- RSS(단순 오차 제곱 합)
+- MSE(평균 제곱 오차)
+- MAE(평균 절대값 오차)
+<br>
+
+RSS : 예측값과 실제값의 오차의 제곱합 <br>
+MSE : RSS를 데이터의 개수만큼 나눈 값 <br>
+MAE : 예측값과 실제값의 오차의 절대값의 평균 <br>
+
+
+++  RMSE와 RMAE라는 것도 있는데, <br>
+각각 MSE와 MAE에 루트를 씌운 값입니다. <br>
+<br>
+
+
+> MSE의 경우 오차에 제곱이 되기 때문에 **이상치(outlier)를 잡아내는 데 효과적**. <br>
+> 틀린 걸 더 많이 틀렸다고 알려주는 것. <br>
+> MAE의 경우 **변동치가 큰 지표와 낮은 지표를 같이 예측하는 데 효과적**. <br>
+> 둘 다 가장 간단한 평가 방법으로 직관적인 해석이 가능하지만, <br>
+> 평균을 그대로 이용하기 때문에 데이터의 크기에 의존한다는 단점이 있음.
+
+>> MSE는 전체 데이터의 크기에 의존하기 때문에 <br>
+서로 다른 두 모델의 <u>MSE만을 비교해서</u> **어떤게 더 좋은 모델인지 판단하기 어렵다**는 단점이 있음.
+
+- 이를 해결하기 위한 metric으로 R2 (결정계수)가 있음.
+
+> R2는 **회귀 모델의 설명력을 표현**하는 지표 <br>
+> 그 값이 <u>**1에 가까울수록 높은 성능**</u>의 모델 <br>
+>> R2의 식에서 분자인 RSS의 근본은 실제값과 예측값의 차이인데, <br>
+>> 그 값이 0에 가까울수록 모델이 잘 예측을 했다는 뜻이므로 <br>
+>> R2값이 1에 가까워지게 됩니다.
+
