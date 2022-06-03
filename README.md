@@ -522,16 +522,23 @@ if __name__ == '__main__':
 <br>
 
 # 220603
+[numpy 배열 저장 및 불러오기](https://gldmg.tistory.com/43) <br>
+```python
+import numpy as np
+data = np.arange(100) # 저장하는 데이터
+np.save('my_data.npy', data) # numpy.ndarray 저장. @파일명, @값
+data2 = np.load('my_data.npy') # 데이터 로드. @파일명
+```
+
 [사이킷런을 이용해 머신러닝 모델링 해보기](https://brunch.co.kr/@parkkyunga/66) <br>
 [csv to numpy methods, methods3, 5 이용](https://linuxhint.com/python-read-csv-2d-array/) <br>
-<br>
-
 ```
 Method 3: Using the Pandas Dataframe
 Method 5: Using Pandas Dataframe Values
 ```
 <br>
 
+[np.concatenate, np.stack](https://engineer-mole.tistory.com/234) <br>
 ```python
 np.concatenate([arr1, arr2]) # 아래로 잇기 (열 수가 같아야 함.)
 np.concatenate([arr1, arr2], axis = 1) # 옆으로 잇기 (행 수가 같아야 함.)
@@ -551,12 +558,16 @@ fillna를 해주는 것. <br>
 
 > RMSE / MSE / logloss # for Regression
 > Accuracy / f1-score # for Classification
+```
+Accuracy를 평가 척도로 사용한다면 균형(Balanced) 데이터에서 사용하시길 권유
+불균형 데이터 상태에서는 F1 Score를 이용
+```
 
 <br>
 
 [머신러닝 모델 성능 평가 관련 + 예시 코드](https://bhcboy100.medium.com/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EB%B6%84%EB%A5%98-%ED%8F%89%EA%B0%80%EC%A7%80%ED%91%9C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-%EC%A0%95%ED%99%95%EB%8F%84-%EC%A0%95%EB%B0%80%EB%8F%84-%EC%9E%AC%ED%98%84%EC%9C%A8-f1-%EC%8A%A4%EC%BD%94%EC%96%B4-6bf91535a01a) <br>
 
-[회귀/ 분류시 알맞은 metric과 설명](https://mole-starseeker.tistory.com/30) - 아주 친절, 괜찮아 보임, 회귀의 경우 예시가 주식데이터<br>
+💛💜💨💫 [회귀/ 분류시 알맞은 metric과 설명](https://mole-starseeker.tistory.com/30) - 아주 친절, 괜찮아 보임, 회귀의 경우 예시가 주식데이터<br>
 
 ## 회귀문제
 ---
@@ -593,5 +604,60 @@ MAE : 예측값과 실제값의 오차의 절대값의 평균 <br>
 > 그 값이 <u>**1에 가까울수록 높은 성능**</u>의 모델 <br>
 >> R2의 식에서 분자인 RSS의 근본은 실제값과 예측값의 차이인데, <br>
 >> 그 값이 0에 가까울수록 모델이 잘 예측을 했다는 뜻이므로 <br>
->> R2값이 1에 가까워지게 됩니다.
+>> R2값이 1에 가까워지게 됩니다. <br>
 
+<br>
+<br>
+
+- 검색어: [linear regression 하이퍼 파라미터 튜닝] <br>
+[[ 핸즈 온 머신러닝 2판 ] pandas, sklearn을 통한 모델 학습과 튜닝은 어떻게 하는 것일까? (3)](https://box-world.tistory.com/44) - GridSearchCV <br>
+
+이전 2개의 포스팅에 결쳐 우리는 지금까지 <u>**문제를 정의**</u>하고 <u>**데이터를 읽어들여 탐색**</u>하였습니다. <br>
+그리고 데이터를 training set과 test set으로 나누고 학습을 위한 머신러닝 알고리즘에 주입할 데이터를 자동으로 <u>**전처리**</u>하고 <u>**정제**</u>하는 파이프라인까지 만들어 보았습니다. <br>
+이번 포스팅에서는 머신러닝 모델을 선택하고 훈련시켜 세부적으로 튜닝하는 법까지 다뤄보겠습니다. <br>
+<br>
+<br>
+
+### <현재 LinearRegressor> <br>
+대부분 구역의 median house value가 
+120000 ~ 265000 사이인 것을 감안하면, <br>
+$68628의 오차는 그리 좋은 편은 아닌 것 같습니다. <br>
+<br>
+이러한 결과는 모델이 과소 적합(Underfit) 되었기 때문이며, <br>
+이는 데이터가 부족하거나, 모델이 강력하지 못한 탓 <br>
+<u>**우선**</u> **좀 더 복잡한 모델**을 시도해서 어떻게 되는지 확인해보겠습니다. <br>
+
+### <이제 DecisionTreeRegressor> <br>
+- 이 모델은 강력, 데이터에서 복잡한 비선형관계를 찾을 수 있음. <br>
+
+평가시 결과가 0.0이 나옴. <br>
+=> ***오차가 없다***는 뜻인데, <u>**모델이 완벽할 리는 없으므로**</u> <br>
+아마 데이터가 심각하게 과대적합(Overfit) 되었을 확률이 큼. <br>
+하지만 이 또한 확신할 수 없으므로 <br>
+<u>**training set에서 일부**</u>를 교차검증 (cross-validation) 데이터로 **분리**시켜 <br>
+<u>**모델을 평가하는데에 사용해야**</u> 함. <br>
+<br>
+train_test_split 함수를 사용하여 <u>**training set을**</u> 더 작은 **traing set과 cv set으로 나누고**, <br>
+training set에서는 모델 훈련을, <br>
+cv set에서는 모델 평가가 이루어지게 하면 됨. <br>
+
+> 혹은 훌륭한 대안으로 sklearn의 <u>**k-fold cross-validation**</u> 기능을 사용할 수 있음. <br>
+>> 이는 training set을 fold라 불리는 10개의 subset (k-fold, 작성자의 예시 코드에서 k = 10)으로 <u>**무작위 분할**</u> <br>
+>> 그 후 DecisionTree 모델을 <u>**10번 훈련하고 평가**</u>하는데, <br>
+>> 이때 매번 다른 하나의 fold를 사용하여 평가하고 나머지 9개는 훈련에 사용. <br>
+>> 그리고 10개의 평가 점수가 담긴 배열이 결과가 됩니다. <br>
+
+>  np.sqrt()에 -scores가 들어간 것은
+> cross_val_score() 메서드의 scoring 매개변수가
+>> 낮을수록 좋은 loss function이 아니라, <br>
+>> 클수록 좋은 utility function을 기대하기 때문에 <br>
+
+> 따라서 MSE의 반대 즉 **음숫값을 계산**하는 <u>**neg_mean_squared_error**</u> 함수를 사용함. <br>
+그래서 제곱근 계산을 위하여 -scores로 부호를 +로 바꾼 것. <br>
+
+<br>
+
+[핸즈온 머신러닝(3) - 머신러닝 프로젝트 6[마무리]](https://chana.tistory.com/entry/%ED%95%B8%EC%A6%88%EC%98%A8-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D3-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-6%EB%A7%88%EB%AC%B4%EB%A6%AC) <br>
+[[머신러닝][교차검증, 파라미터 튜닝]](https://kpumangyou.tistory.com/80) <br>
+[3.1. 선형 회귀(Linear Regression)](https://ko.d2l.ai/chapter_deep-learning-basics/linear-regression.html) <br>
+[[Sklearn] 파이썬 랜덤 포레스트 모델 학습, 하이퍼파라미터 튜닝 - RandomForestClassifier](https://jimmy-ai.tistory.com/29) <br>
