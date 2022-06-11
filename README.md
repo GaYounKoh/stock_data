@@ -662,3 +662,7 @@ cv set에서는 모델 평가가 이루어지게 하면 됨. <br>
 [[머신러닝][교차검증, 파라미터 튜닝]](https://kpumangyou.tistory.com/80) <br>
 [3.1. 선형 회귀(Linear Regression)](https://ko.d2l.ai/chapter_deep-learning-basics/linear-regression.html) <br>
 [[Sklearn] 파이썬 랜덤 포레스트 모델 학습, 하이퍼파라미터 튜닝 - RandomForestClassifier](https://jimmy-ai.tistory.com/29) <br>
+<br>
+
+# 220612
+[R squred](https://vitalflux.com/r-squared-explained-machine-learning/) <br>
