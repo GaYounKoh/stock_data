@@ -679,3 +679,8 @@ imbalance한 문제에서는 precision과 recall이 유용하게 사용될 수 �
 [정밀도와 재현율 예시와, 오차행렬 안헷갈리는 방법, 분류모델 평가지표](https://jennainsight.tistory.com/entry/%EC%A0%95%EB%B0%80%EB%8F%84precision%EC%99%80-%EC%9E%AC%ED%98%84%EC%9C%A8recall%EC%9D%98-%EC%98%A4%EC%B0%A8%ED%96%89%EB%A0%AC-%EB%B6%84%EB%A5%98%EB%AA%A8%EB%8D%B8-%ED%8F%89%EA%B0%80%EC%A7%80%ED%91%9C)
 
 [💛F1 score가 높을 수록 정교한 모델임.](https://jennainsight.tistory.com/entry/F1-Score-Roc%EA%B3%A1%EC%84%A0-Auc-%EA%B3%84%EC%82%B0%EB%B0%A9%EB%B2%95-scikit-learn-%EC%BD%94%EB%93%9C%EB%A1%9C-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0)
+
+
+# 220616 교수님 미팅 내용
+[교차검증 및 통계적 검정 실습, 유의성 검증](https://www.youtube.com/watch?v=KBZDh6Ho8Rg&list=PLPHtWS04VkUanVXHXhvFEh0GM-dAnzlHr&index=20) <br>
+[교차검증 및 통계적 검정](https://www.youtube.com/watch?v=wYW3gcSQTR4&list=PLPHtWS04VkUanVXHXhvFEh0GM-dAnzlHr&index=21)
