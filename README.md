@@ -680,6 +680,7 @@ imbalance한 문제에서는 precision과 recall이 유용하게 사용될 수 �
 
 [💛F1 score가 높을 수록 정교한 모델임.](https://jennainsight.tistory.com/entry/F1-Score-Roc%EA%B3%A1%EC%84%A0-Auc-%EA%B3%84%EC%82%B0%EB%B0%A9%EB%B2%95-scikit-learn-%EC%BD%94%EB%93%9C%EB%A1%9C-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0)
 
+683통계적 검증 
 
 # 220616 교수님 미팅 내용
 [교차검증 및 통계적 검정 실습, 유의성 검증](https://www.youtube.com/watch?v=KBZDh6Ho8Rg&list=PLPHtWS04VkUanVXHXhvFEh0GM-dAnzlHr&index=20) <br>
