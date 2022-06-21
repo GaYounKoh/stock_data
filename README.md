@@ -684,5 +684,8 @@ imbalance한 문제에서는 precision과 recall이 유용하게 사용될 수 �
 # 220616 교수님 미팅 내용
 통계적 검증 결과 <br>
 [교차검증 및 통계적 검정 실습, 유의성 검증](https://www.youtube.com/watch?v=KBZDh6Ho8Rg&list=PLPHtWS04VkUanVXHXhvFEh0GM-dAnzlHr&index=20) <br>
-[교차검증 및 통계적 검정](https://www.youtube.com/watch?v=wYW3gcSQTR4&list=PLPHtWS04VkUanVXHXhvFEh0GM-dAnzlHr&index=21)
+[교차검증 및 통계적 검정](https://www.youtube.com/watch?v=wYW3gcSQTR4&list=PLPHtWS04VkUanVXHXhvFEh0GM-dAnzlHr&index=21) <br>
+<br>
 
+# 220621
+사용하는 데이터(d1221.ftr): d2012 ~ d2021 아래로 병합시킨 것
