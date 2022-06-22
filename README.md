@@ -688,4 +688,47 @@ imbalance한 문제에서는 precision과 recall이 유용하게 사용될 수 �
 <br>
 
 # 220621
-사용하는 데이터(d1221.ftr): d2012 ~ d2021 아래로 병합시킨 것
+사용하는 데이터(d1221.ftr): d2012 ~ d2021 아래로 병합시킨 것 <br>
+<br>
+
+# 220622
+데이터 필터링, tr > 10억 <br>
+사용하는 데이터 (d1221 10thr.ftr) <br>
+
+[주식 투자자의 의사결정 지원을 위한 데이터마이닝 도구](http://www.koreascience.or.kr/article/JAKO201209640670569.pdf) <br>
+[주식시장에서의 집단심리(2)](https://news.mt.co.kr/mtview.php?no=2005071318140033108&vgb=column&code=column87) <br>
+[(공식, 국가기록원) 대한민국 주식시장의 역사](https://theme.archives.go.kr/next/koreaOfRecord/stockMarket.do) <br>
+[사례기반학습을 이용한 주식 데이터 예측 방법](https://www.koreascience.or.kr/article/JAKO201103334699336.pdf) <br>
+[주식 투자자의 1%만 아는 구글 스프레드시트로 주식 데이터 불러오는 방법](https://www.hanbit.co.kr/media/channel/view.html?cms_code=CMS1074840986) <br>
+[딥러닝을 활용한 실시간 주식거래에서의 매매 빈도 패턴과 예측 시점에 관한 연구: KOSDAQ 시장을 중심으로](http://koreascience.kr/article/JAKO201831854887306.pdf)<br>
+[키움 애널리스트](https://sogang.ac.kr/front/boardview.do?pkid=531658&currentPage=1&searchField=ALL&siteGubun=1&menuGubun=1&bbsConfigFK=102&searchLowItem=ALL&searchValue=)<br>
+[investing.com에서 현재 사라진 (혹은 상장폐지된) 기업의 과거 주식데이터 차트 볼 수 있음](https://kr.investing.com/equities/hyundai-pc-historical-data)<br>
+<br>
+<br>
+
+
+[하이퍼파라미터튜닝 예시코드] <br>
+검색어: <br>
+linear regression hyperparameter tuning <br>
+linear regression hyperparameter tuning python code <br>
+ridge hyperparameter tuning python code <br>
+<br>
+
+[예시코드 있음. Hyperparameter Tuning in Lasso and Ridge Regressions](https://towardsdatascience.com/hyperparameter-tuning-in-lasso-and-ridge-regressions-70a4b158ae6d) - linear reg에 대한 하이퍼파라미터튜닝 못하니 ridge, lasso, elasticnet으로 하라는 스택오버플로우 조언 보고 검색해서 발견한 결과임.<br>
+
+[예시코드 있음. Tuning ML Hyperparameters - LASSO and Ridge Examples](https://alfurka.github.io/2018-11-18-grid-search/) <br>
+
+[How to Develop Ridge Regression Models in Python](https://machinelearningmastery.com/ridge-regression-with-python/) <br>
+<br>
+<br>
+
+
+[for ppt결측값을 왜 채워넣어야 하는가?] <br>
+일반적으로 머신러닝 모델의 입력 값으로 결측값(Null,NaN) 사용 불가능 !하므로 fillna를 통해 결측치를 각 열의 평균값으로 채워주었음. <br>
+https://suminn0.tistory.com/34 <br>
+(같은 내용 https://velog.io/@phphll/Machine-Learning) <br>
+
+[좋은 머신 러닝 모델을 구축하는 데 도움이 되는 핵심적인 전처리 기법](https://velog.io/@ksj5738/4%EC%9E%A5.-%EC%A2%8B%EC%9D%80-%ED%9B%88%EB%A0%A8-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%85%8B-%EB%A7%8C%EB%93%A4%EA%B8%B0-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%B2%98%EB%A6%AC) <br>
+[결측값이 있는 경우 모델이 입력을 아예 하지 못하는 경우도 있다.](https://velog.io/@traumen25/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B03) <br>
+[결측치 왜 채워야 하는 가에 대해 dacon 따릉이 study.txt 참고](https://github.com/DataNetworkAnalysis/Dacon_study/blob/main/220529%20%EB%94%B0%EB%A6%89%EC%9D%B4%20%EC%8A%A4%ED%84%B0%EB%94%94.txt) <br>
+
