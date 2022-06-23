@@ -731,4 +731,13 @@ https://suminn0.tistory.com/34 <br>
 [좋은 머신 러닝 모델을 구축하는 데 도움이 되는 핵심적인 전처리 기법](https://velog.io/@ksj5738/4%EC%9E%A5.-%EC%A2%8B%EC%9D%80-%ED%9B%88%EB%A0%A8-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%85%8B-%EB%A7%8C%EB%93%A4%EA%B8%B0-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%B2%98%EB%A6%AC) <br>
 [결측값이 있는 경우 모델이 입력을 아예 하지 못하는 경우도 있다.](https://velog.io/@traumen25/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B03) <br>
 [결측치 왜 채워야 하는 가에 대해 dacon 따릉이 study.txt 참고](https://github.com/DataNetworkAnalysis/Dacon_study/blob/main/220529%20%EB%94%B0%EB%A6%89%EC%9D%B4%20%EC%8A%A4%ED%84%B0%EB%94%94.txt) <br>
+<br>
+
+# 220623
+[grid search cv와 Lasso를 결합한 LassoCV라는 게 있다.](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LassoCV.html) <br>
+
+[grid search CV 사용법](https://dsbook.tistory.com/135) <br>
+
+==> 그리드 서치 cv는 내가 정해준 값들 내에서만 돌아감. <br>
+==> 랜덤 서치 cv는 정하는 값조차도 랜덤하게 선택. <br>
 
