@@ -734,10 +734,26 @@ https://suminn0.tistory.com/34 <br>
 <br>
 
 # 220623
+[[제일 중요!!!!!!!] randomCV regressor 예시 코드, 수연코드 참고!!!!!!, 하이퍼파라미터 조정 clf](https://kimmaadata.tistory.com/40)
 [grid search cv와 Lasso를 결합한 LassoCV라는 게 있다.](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LassoCV.html) <br>
 
+[그리드서치 cv 사용법](https://alfurka.github.io/2018-11-18-grid-search/) <br>
 [grid search CV 사용법](https://dsbook.tistory.com/135) <br>
 
 ==> 그리드 서치 cv는 내가 정해준 값들 내에서만 돌아감. <br>
 ==> 랜덤 서치 cv는 정하는 값조차도 랜덤하게 선택. <br>
+<br>
 
+[fdr, pykrx 비교](https://psystat.tistory.com/151) <br>
+[크롤링하다가 막힌 사례](https://electromastersesi.tistory.com/149) <br>
+[2020년 동학개미 운동에 대한 총평, [MonthlyNow] 뜨거웠던 2020 주식시장, 코스피 3000시대 개막이 눈앞에](https://www.monthlypeople.com/news/articleView.html?idxno=54834) <br>
+[2020 주식거래 활동 계좌, 스마트 2030 개미](https://www.hani.co.kr/arti/economy/finance/975128.html) <br>
+[2030 개미들이 일군 ‘코스피 3,000’의 명과 암](https://eiec.kdi.re.kr/publish/naraView.do?fcode=00002000040000100009&cidx=13224&sel_year=2021&sel_month=05&pp=20&pg=1) <br>
+[파이썬 증권 데이터 수집과 분석으로 신호와 소음 찾기](https://www.inflearn.com/course/%EC%A6%9D%EA%B6%8C%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%88%98%EC%A7%91-%EB%B6%84%EC%84%9D) <br>
+[주식 투자자의 의사결정 지원을 위한 데이터마이닝 도구](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001636686) <br>
+
+[빅데이터를 활용한 인공지능 주식 예측 분석](https://www.koreascience.or.kr/article/JAKO202131559470407.pdf) <br>
+[빅데이터를 활용한 국내주식시장 분석 기법 제안에 관한 연구](https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE06086205&mark=0&useDate=&ipRange=N&accessgl=Y&language=ko_KR&hasTopBanner=true) <br>
+
+
+[주식데이터 크롤링](https://shinminyong.tistory.com/9?category=837416) <br>
