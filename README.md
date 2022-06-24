@@ -734,14 +734,14 @@ https://suminn0.tistory.com/34 <br>
 <br>
 
 # 220623
-[[제일 중요!!!!!!!] randomCV regressor 예시 코드, 수연코드 참고!!!!!!, 하이퍼파라미터 조정 clf](https://kimmaadata.tistory.com/40)
+💛[💛[제일 중요!!!!!!!] randomCV regressor 예시 코드, 수연코드 참고!!!!!!, 하이퍼파라미터 조정 clf](https://kimmaadata.tistory.com/40)
 [grid search cv와 Lasso를 결합한 LassoCV라는 게 있다.](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LassoCV.html) <br>
 
 [그리드서치 cv 사용법](https://alfurka.github.io/2018-11-18-grid-search/) <br>
 [grid search CV 사용법](https://dsbook.tistory.com/135) <br>
 
-==> 그리드 서치 cv는 내가 정해준 값들 내에서만 돌아감. <br>
-==> 랜덤 서치 cv는 정하는 값조차도 랜덤하게 선택. <br>
+💛==> 그리드 서치 cv는 내가 정해준 값들 내에서만 돌아감. <br>
+💛==> 랜덤 서치 cv는 정하는 값조차도 랜덤하게 선택. <br>
 <br>
 
 [fdr, pykrx 비교](https://psystat.tistory.com/151) <br>
@@ -757,3 +757,16 @@ https://suminn0.tistory.com/34 <br>
 
 
 [주식데이터 크롤링](https://shinminyong.tistory.com/9?category=837416) <br>
+<br>
+
+
+# 220625
+💛[💛!!!!가장 중요!!!!!! Azure Machine Learning](https://docs.microsoft.com/ko-kr/azure/machine-learning/how-to-tune-hyperparameters) - 하이퍼 매개 변수 튜닝을 자동화하고 병렬로 실험을 실행하여 하이퍼 매개 변수를 효율적으로 최적화 <br>
+[베이지안 옵티마이제이션](https://newstellar.tistory.com/11?category=973947) <br>
+[grid search, random search, bayesian optimization](https://heytech.tistory.com/389) <br>
+[회귀모델 성능평가지표, 결정계수 R2란?, 조정된 결정계수 (adj_R2)](https://ltlkodae.tistory.com/19) <br>
+[분류성능평가지표](https://sumniya.tistory.com/26) <br>
+
+[]() <br>
+[]() <br>
+[]() <br>
