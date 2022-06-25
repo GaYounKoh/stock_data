@@ -766,7 +766,19 @@ https://suminn0.tistory.com/34 <br>
 [grid search, random search, bayesian optimization](https://heytech.tistory.com/389) <br>
 [회귀모델 성능평가지표, 결정계수 R2란?, 조정된 결정계수 (adj_R2)](https://ltlkodae.tistory.com/19) <br>
 [분류성능평가지표](https://sumniya.tistory.com/26) <br>
+<br>
 
-[]() <br>
-[]() <br>
-[]() <br>
+# 220626
+[회귀 최적의 하이퍼파라미터 모음(?)] <br>
+
+linear, ridge, lasso, elasicnet <br>
+[릿지, 라쏘](https://tral-lalala.tistory.com/4) <br>
+[💛릿지, 라쏘, 엘라스틱넷 -> alpha = 0.0001, 수식 해석 + CODE 정리](https://nurilee.com/2020/01/26/data-science-model-summary-linear-ridge-lasso-elasticnet/) <br>
+[[ML] Regression metric 과 Elastic net regression](https://techblog-history-younghunjo1.tistory.com/143) <br>
+[지도학습 하이퍼파라미터](https://velog.io/@lasso/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-Day1-%EC%A0%95%EB%A6%AC) <br>
+[How to Develop LASSO Regression Models in Python](http://insightcampus.co.kr:9090/insightcommunity/?mod=document&uid=12962) <br>
+
+[LGBM] <br>
+[Light GBM(LGBM)의 개요와 파라미터 정의에 대해](https://nicola-ml.tistory.com/51) <br>
+[LGBM은 어떻게 사용할까](https://greatjoy.tistory.com/72) <br>
+[💛LGBM이란? 그리고 하이퍼파라미터 튜닝하기](https://nurilee.com/2020/04/03/lightgbm-definition-parameter-tuning/) <br>
